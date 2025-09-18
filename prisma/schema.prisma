@@ -31,7 +31,7 @@ model Article {
   title       String
   siteName    String
   description String?
-  thumbnail   String?
+  thumbnail   String? @db.Text 
   content     String?  @db.Text
   publishedAt DateTime?
   isLiked     Boolean  @default(false)
